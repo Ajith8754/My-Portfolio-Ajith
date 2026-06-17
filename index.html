@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajith | Professional Graphic Designer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Ajith, a Creative Graphic Designer specializing in branding, logos, and social media creatives.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-left">
+      <div id="navToggle" class="nav-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <h1 class="logo">Portfolio</h1>
+
+      <nav class="desktop-nav">
+        <a href="#home">Home</a>
+        <a href="#certifications">Certificates</a>
+        <a href="#projects">Projects</a>
+      </nav>
+    </div>
+
+    <!-- Navigation Slider -->
+    <nav id="navSlider" class="nav-slider">
+      <div id="navClose" class="nav-close">&times;</div>
+      <ul>
+        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="#certifications"><i class="fas fa-certificate"></i> Certificates</a></li>
+        <li><a href="#projects"><i class="fas fa-folder-open"></i> Projects</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-right">
+      <button id="themeToggle" title="Toggle Theme">
+        <i class="fas fa-sun"></i>
+      </button>
+      <div class="socials">
+        <a href="https://github.com/Ajith8754" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ajith-t-15855824b?" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/918754366470" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:ajitht8754@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <section id="about" class="about">
+      <div class="about-container">
+        <!-- LEFT : PROFILE IMAGE -->
+        <div class="about-image animate">
+          <img src="assets/ajith.jpeg" alt="Ajith - Graphic Designer">
+        </div>
+
+        <!-- RIGHT : CONTENT -->
+        <div class="about-content">
+          <h2>Creative Mind, <br>Impactful Designs</h2>
+          <p class="about-role animate">Graphic Designer & Web Designer</p>
+
+          <p class="animate">
+            I’m <strong>Ajith</strong>, a dedicated graphic & web designer specializing in
+            <strong>branding, logos, and websites</strong>.
+            I bridge the gap between imagination and reality with designs that communicate
+            clearly and look stunning.
+          </p>
+
+          <p>
+            With expertise in industry-standard tools, I help brands build a unique
+            identity that resonates with their audience.
+          </p>
+
+          <div class="about-tags animate">
+            <span>Branding</span>
+            <span>Logo Design</span>
+            <span>Posters</span>
+            <span>Banners</span>
+            <span>Web Design</span>
+          </div>
+
+          <div class="about-tools animate">
+            <h4>Tech Stack</h4>
+            <p>Photoshop · Illustrator · Figma · Canva . Generative AI </p>
+          </div>
+
+          <a href="assets/pdf/AJITH T.pdf" class="resume-btn animate" download>
+            <i class="fas fa-download"></i> View Resume
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="certifications">
+      <h2>Professional Certifications</h2>
+      <div class="cert-grid">
+        <div class="cert-card" onclick="openPopup('assets/Certification/GEN ai.jpeg')">
+          <img src="assets/Certification/GEN ai.jpeg" alt="Generative AI Certification">
+          <h3>Generative AI</h3>
+        </div>
+        <div class="cert-card" onclick="openPopup('assets/Certification/design thinking.jpeg')">
+          <img src="assets/Certification/design thinking.jpeg" alt="Design Thinking Certification">
+          <h3>Design Thinking</h3>
+        </div>
+        <div class="cert-card" onclick="openPopup('assets/Certification/poowerBi.jpeg')">
+          <img src="assets/Certification/poowerBi.jpeg" alt="Power BI Certification">
+          <h3>Power BI</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="works">
+      <h2>Projects</h2>
+
+      <div class="filters animate">
+        <button class="active" data-filter="all">All Works</button>
+        <button data-filter="poster">Posters</button>
+        <button data-filter="logo">Logos</button>
+        <button data-filter="banner">Banners</button>
+        <button data-filter="graphical">Graphical & Websites</button>
+      </div>
+
+      <div class="gallery" id="gallery">
+        <!-- Gallery items will be injected by script.js -->
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Let's Work Together</h2>
+      <p>Have a project in mind? reach out and let's create something amazing that stands out in the digital landscape.
+      </p>
+
+      <div class="contact-info">
+        <div class="contact-item">
+          <a href="mailto:ajithdesigner@gmail.com" class="contact-link">
+            <i class="fas fa-envelope"></i>
+            <span>ajitht8754@gmail.com</span>
+          </a>
+        </div>
+        <div class="contact-item">
+          <a href="tel:+918754366470" class="contact-link">
+            <i class="fas fa-phone"></i>
+            <span>+91 87543 66470</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ajith T · Developed by Ajith T</p>
+  </footer>
+
+  <!-- IMAGE POPUP -->
+  <div id="popup">
+    <span id="close">&times;</span>
+    <img id="popupImg" alt="Portfolio Preview">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
