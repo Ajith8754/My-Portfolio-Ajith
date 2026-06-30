@@ -83,7 +83,7 @@ const galleryData = [
     desc: "Explore Web Projects",
     img: "assets/d3.avif",
     images: [
-      { title: "Website 1", img: "assets/web1.png", link: "#" },
+      { title: "Website 1", img: "assets/web1.png", link: "https://tvajithsimpleenergy.onrender.com/dashboard/TV" },
       { title: "Website 2", img: "assets/web2.png", link: "#" },
       { title: "Website 3", img: "assets/web3.png", link: "https://ajith8754.github.io/ASM/" },
       { title: "Website 4", img: "assets/web4.png", link: "#" },
