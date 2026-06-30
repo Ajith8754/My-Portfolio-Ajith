@@ -170,17 +170,32 @@ function openFolder(images, title) {
     <div class="folder-grid">
       ${images.map((img, i) => {
         if (typeof img === 'object') {
-          return `
-            <div class="folder-item website-item" onclick="if ('${img.link}' && '${img.link}' !== '#') { window.open('${img.link}', '_blank'); } else { alert('${img.title} is coming soon!'); }">
-              <div class="folder-item-image">
-                <img src="${img.img}" alt="${img.title}">
+          const hasLink = img.link && img.link !== '#';
+          if (hasLink) {
+            return `
+              <a href="${img.link}" target="_blank" rel="noopener noreferrer" class="folder-item website-item">
+                <div class="folder-item-image">
+                  <img src="${img.img}" alt="${img.title}">
+                </div>
+                <div class="folder-item-info">
+                  <h3>${img.title}</h3>
+                  <span class="view-btn">Visit Website <i class="fas fa-external-link-alt"></i></span>
+                </div>
+              </a>
+            `;
+          } else {
+            return `
+              <div class="folder-item website-item" onclick="alert('${img.title} is coming soon!');">
+                <div class="folder-item-image">
+                  <img src="${img.img}" alt="${img.title}">
+                </div>
+                <div class="folder-item-info">
+                  <h3>${img.title}</h3>
+                  <span class="view-btn">Visit Website <i class="fas fa-external-link-alt"></i></span>
+                </div>
               </div>
-              <div class="folder-item-info">
-                <h3>${img.title}</h3>
-                <span class="view-btn">Visit Website <i class="fas fa-external-link-alt"></i></span>
-              </div>
-            </div>
-          `;
+            `;
+          }
         } else {
           return `
             <div class="folder-item" onclick="window.AntigravityOpenSingle('${img}')">
