@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09090d">
+  <meta name="description"
+    content="Ajith T — UI/UX and Web Designer creating intuitive digital experiences, responsive websites and product interfaces.">
+  <title>Ajith T — UI/UX & Web Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="noise"></div>
+  <header class="site-header">
+    <a class="brand" href="#home"><span class="brand-mark">A<span>.</span></span><span>AJITH T</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation"><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="#about">About</a><a href="#work">Work</a><a href="#process">Process</a><a href="#skills">Skills</a><a
+        href="#experience">Experience</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR DESIGN OPPORTUNITIES</div>
+        <p class="hero-kicker">Hello, I'm Ajith T</p>
+        <h1>Designing digital<br>experiences with <em>purpose.</em></h1>
+        <p class="hero-intro">UI/UX & Web Designer focused on creating intuitive interfaces, meaningful user journeys
+          and responsive digital products.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work <span>↗</span></a>
+          <a class="button button-ghost" href="#contact">Get in touch</a>
+        </div>
+        <div class="hero-meta"><span>BASED IN INDIA</span><i></i><span>UI/UX · WEB DESIGN · VISUAL DESIGN</span></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="visual-orbit orbit-one"></div>
+        <div class="visual-orbit orbit-two"></div>
+        <div class="visual-glow"></div>
+        <div class="profile-frame"><img src="assets/aj.jpeg" alt="Ajith T — UI/UX and Web Designer"
+            onerror="this.style.display='none';this.parentElement.classList.add('no-photo')"><span
+            class="profile-fallback">AJITH<br><b>T.</b></span></div>
+        <div class="floating-card card-top"><span class="mini-icon">✳</span><span>Thoughtful<br>interfaces</span></div>
+        <div class="floating-card card-bottom"><span class="mini-icon">⌘</span><span>Design to<br>development</span>
+        </div>
+        <div class="visual-caption">CREATIVE MIND / USER-FIRST THINKING</div>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="intro-strip">
+      <div class="strip-inner"><span>USER-CENTRED DESIGN</span><b>✳</b><span>RESPONSIVE WEB
+          EXPERIENCES</span><b>✳</b><span>VISUAL STORYTELLING</span><b>✳</b><span>CONTINUOUS LEARNING</span></div>
+    </section>
+
+    <section class="section section-wrap" id="about">
+      <div class="section-heading reveal">
+        <p class="section-index">01 / ABOUT</p>
+        <h2>Curiosity meets<br><em>creative problem-solving.</em></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="lead">I'm Ajith, a B.Tech Artificial Intelligence & Machine Learning graduate with a passion for
+            designing clear, engaging and useful digital experiences.</p>
+          <p>I work across UI/UX design and web development — from understanding a requirement and shaping a user flow
+            to creating polished interfaces and building responsive web pages. I enjoy turning complex ideas into simple
+            experiences.</p>
+          <p>My experience also includes vehicle testing and validation, which has strengthened my attention to detail,
+            structured problem-solving and understanding of real-world product behaviour.</p>
+
+        </div>
+        <div class="about-facts reveal">
+          <div class="fact-card"><span class="fact-number">01</span>
+            <div>
+              <h3>Design with intent</h3>
+              <p>Research-led thinking, wireframes, visual hierarchy and usable interfaces.</p>
+            </div>
+          </div>
+          <div class="fact-card"><span class="fact-number">02</span>
+            <div>
+              <h3>Build for the web</h3>
+              <p>Responsive layouts using HTML, CSS and JavaScript fundamentals.</p>
+            </div>
+          </div>
+          <div class="fact-card"><span class="fact-number">03</span>
+            <div>
+              <h3>Think beyond screens</h3>
+              <p>Bringing product, testing and user experience perspectives together.</p>
+            </div>
+          </div>
+          <div class="education-card"><span>EDUCATION</span>
+            <h3>B.Tech — Artificial Intelligence & Machine Learning</h3>
+            <p>Hindusthan College of Engineering & Technology · 2021–2025</p><strong>CGPA 8.3</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-wrap work-section" id="work">
+      <div class="section-heading reveal">
+        <p class="section-index">02 / SELECTED WORK</p>
+        <h2>A selection of things<br><em>I've designed & built.</em></h2>
+        <p class="heading-note">A mix of product interfaces, dashboards, websites and visual design.</p>
+      </div>
+      <div class="work-tabs reveal" role="tablist" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all">All work <span>08</span></button>
+        <button class="filter-btn" data-filter="uiux">UI/UX</button>
+        <button class="filter-btn" data-filter="web">Web design</button>
+        <button class="filter-btn" data-filter="visual">Visual design</button>
+      </div>
+      <div class="project-grid" id="projectGrid">
+        <article class="project-card project-featured reveal" data-category="uiux">
+          <a class="project-image" href="assets/HMI app design.png" target="_blank"><img src="assets/HMI app design.png"
+              alt="Smart Ride HMI App Design" loading="lazy"><span class="image-arrow">↗</span></a>
+          <div class="project-info">
+            <div><span class="project-type">MOBILE APP · UI/UX</span>
+              <h3>Smart Ride HMI App</h3>
+              <p>EV-focused interface concept for vehicle information and ride-related controls.</p>
+            </div>
+            <div class="project-actions"><span class="project-count">01</span><button class="cs-btn"
+                data-cs="cs-hmi">Case Study ↗</button></div>
+          </div>
+        </article>
+        <article class="project-card reveal" data-category="uiux">
+          <a class="project-image" href="assets/nv.png" target="_blank"><img src="assets/nv.png"
+              alt="Transport Management Dashboard" loading="lazy"><span class="image-arrow">↗</span></a>
+          <div class="project-info">
+            <div><span class="project-type">WEB DASHBOARD · UI/UX</span>
+              <h3>Transport Management</h3>
+              <p>Dashboard concept for vehicle-owner discovery, bookings and operations.</p>
+            </div>
+            <div class="project-actions"><span class="project-count">02</span><button class="cs-btn"
+                data-cs="cs-transport">Case Study ↗</button></div>
+          </div>
+        </article>
+        <article class="project-card reveal" data-category="uiux">
+          <a class="project-image" href="assets/gym.png" target="_blank"><img src="assets/gym.png"
+              alt="SK Gym App Design" loading="lazy"><span class="image-arrow">↗</span></a>
+          <div class="project-info">
+            <div><span class="project-type">MOBILE APP · UI/UX</span>
+              <h3>SK Gym App</h3>
+              <p>Fitness membership and gym experience interface with prototype screens.</p>
+            </div>
+            <div class="project-actions"><span class="project-count">03</span><button class="cs-btn"
+                data-cs="cs-gym">Case Study ↗</button></div>
+          </div>
+        </article>
+        <article class="project-card reveal" data-category="uiux">
+          <a class="project-image" href="assets/share box.png" target="_blank"><img src="assets/share box.png"
+              alt="ShareBox App Design" loading="lazy"><span class="image-arrow">↗</span></a>
+          <div class="project-info">
+            <div><span class="project-type">MOBILE APP · UI/UX</span>
+              <h3>ShareBox App</h3>
+              <p>Community sharing concept focused on accessible, straightforward interactions.</p>
+            </div>
+            <div class="project-actions"><span class="project-count">04</span><button class="cs-btn"
+                data-cs="cs-sharebox">Case Study ↗</button></div>
+          </div>
+        </article>
+        <article class="project-card reveal" data-category="uiux">
+          <a class="project-image" href="assets/OS.png" target="_blank"><img src="assets/OS.png"
+              alt="CampaignOS AI Campaign Assistant" loading="lazy"><span class="image-arrow">↗</span></a>
+          <div class="project-info">
+            <div><span class="project-type">AI PRODUCT · UI/UX</span>
+              <h3>CampaignOS</h3>
+              <p>AI campaign assistant mobile interface concept.</p>
+            </div>
+            <div class="project-actions"><span class="project-count">05</span><button class="cs-btn"
+                data-cs="cs-campaign">Case Study ↗</button></div>
+          </div>
+        </article>
+        <article class="project-card reveal" data-category="web">
+          <a class="project-image" href="https://ajith8754.github.io/ATK-WEB/" target="_blank" rel="noopener"><img
+              src="assets/images (1).jpg" alt="ATK Poultry Farm Website" loading="lazy"><span
+              class="image-arrow">↗</span></a>
+          <div class="project-info">
+            <div><span class="project-type">RESPONSIVE WEBSITE</span>
+              <h3>ATK Poultry &amp; Farm</h3>
+              <p>Business website design presenting products, services and brand information.</p>
+            </div>
+            <div class="project-actions"><span class="project-count">06</span><button class="cs-btn"
+                data-cs="cs-atk">Case Study ↗</button></div>
+          </div>
+        </article>
+        <article class="project-card reveal" data-category="web">
+          <a class="project-image" href="https://ajith8754.github.io/ASM/" target="_blank" rel="noopener"><img
+              src="assets/b.jpg" alt="ASM Beauty Parlour Website" loading="lazy"><span class="image-arrow">↗</span></a>
+          <div class="project-info">
+            <div><span class="project-type">RESPONSIVE WEBSITE</span>
+              <h3>ASM Beauty Parlour</h3>
+              <p>Service-led website concept with beauty services and customer enquiry flow.</p>
+            </div>
+            <div class="project-actions"><span class="project-count">07</span><button class="cs-btn"
+                data-cs="cs-asm">Case Study ↗</button></div>
+          </div>
+        </article>
+        <article class="project-card reveal" data-category="visual">
+          <a class="project-image" href="assets/busniss card.png" target="_blank"><img src="assets/busniss card.png"
+              alt="ATK Poultry Farm Branding" loading="lazy"><span class="image-arrow">↗</span></a>
+          <div class="project-info">
+            <div><span class="project-type">BRANDING · VISUAL DESIGN</span>
+              <h3>Brand Identity &amp; Graphics</h3>
+              <p>Logo, poster and promotional design explorations for business communication.</p>
+            </div>
+            <div class="project-actions"><span class="project-count">08</span><button class="cs-btn"
+                data-cs="cs-brand">Case Study ↗</button></div>
+          </div>
+        </article>
+      </div>
+      <p class="project-footnote">More explorations include ShareBox, Fitness Tracker, Travel App, logo collections,
+        banners and promotional creatives.</p>
+    </section>
+
+    <section class="section process-section" id="process">
+      <div class="section-wrap">
+        <div class="section-heading reveal">
+          <p class="section-index">03 / HOW I WORK</p>
+          <p class="kicker">FROM FIRST QUESTION TO FINAL SCREEN</p>
+          <h2>A thoughtful<br><em>design process.</em></h2>
+          <p class="heading-note">A clear process helps me understand the problem, organise information and create
+            interfaces that are easier to use.</p>
+        </div>
+        <div class="process-grid">
+          <div class="process-step reveal"><span class="process-num">01</span><b>Understand</b>
+            <p>Clarify requirements, goals and user needs.</p>
+          </div>
+          <div class="process-step reveal"><span class="process-num">02</span><b>Structure</b>
+            <p>Map content, key tasks and user flows.</p>
+          </div>
+          <div class="process-step reveal"><span class="process-num">03</span><b>Explore</b>
+            <p>Sketch layouts and create wireframes.</p>
+          </div>
+          <div class="process-step reveal"><span class="process-num">04</span><b>Design</b>
+            <p>Build consistent, accessible UI screens.</p>
+          </div>
+          <div class="process-step reveal"><span class="process-num">05</span><b>Prototype</b>
+            <p>Connect screens and demonstrate interactions.</p>
+          </div>
+          <div class="process-step reveal"><span class="process-num">06</span><b>Refine</b>
+            <p>Review feedback and improve the experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="section-wrap">
+        <div class="section-heading reveal">
+          <p class="section-index">04 / CAPABILITIES</p>
+          <p class="kicker">TOOLS ARE ONLY PART OF THE STORY</p>
+          <h2>Skills &amp;<br><em>toolkit.</em></h2>
+        </div>
+        <div class="skills-layout">
+          <div class="skill-block reveal">
+            <span class="skill-label">DESIGN</span>
+            <div class="skill-tags">
+              <span>UI Design</span><span>UX
+                Fundamentals</span><span>Wireframing</span><span>Prototyping</span><span>Visual
+                Hierarchy</span><span>Responsive Design</span><span>Design Systems</span><span>Interaction
+                Design</span><span>Graphic Design</span>
+            </div>
+          </div>
+          <div class="skill-block reveal">
+            <span class="skill-label">TOOLS</span>
+            <div class="skill-tags">
+              <span>Figma</span><span>Canva</span><span>Photoshop</span><span>Illustrator</span><span>VS
+                Code</span><span>Power BI</span><span>Jira</span><span>MS Office</span>
+            </div>
+          </div>
+          <div class="skill-block reveal">
+            <span class="skill-label">DEVELOPMENT</span>
+            <div class="skill-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript (Basic)</span><span>Responsive UI</span><span>REST APIs
+                / JSON (Fundamentals)</span><span>AI-assisted development</span>
+            </div>
+          </div>
+          <div class="skill-block reveal">
+            <span class="skill-label">TESTING &amp; QUALITY</span>
+            <div class="skill-tags">
+              <span>Manual Testing</span><span>Functional Testing</span><span>Regression Testing</span><span>Software
+                Testing Lifecycle</span><span>Vehicle Testing &amp; Validation</span><span>Test Documentation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-wrap" id="experience">
+      <div class="section-heading reveal">
+        <p class="section-index">05 / EXPERIENCE</p>
+        <h2>Learning through<br><em>real-world work.</em></h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-date">OCT 2025 — PRESENT</div>
+          <div class="timeline-content"><span class="timeline-label">TESTING & VALIDATION</span>
+            <h3>Simple Energy Pvt. Ltd.</h3>
+            <p>Working across EV vehicle testing and validation, vehicle performance checks, test rides, component
+              quality observations, issue documentation and dashboard/UI-related work.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-date">MAY 2025 — SEP 2025</div>
+          <div class="timeline-content"><span class="timeline-label">MARKETING EXECUTIVE</span>
+            <h3>ATK Poultry & Farm</h3>
+            <p>Created promotional videos, posters and marketing creatives to support brand visibility and product
+              communication.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section cert-section" id="certifications">
+      <div class="section-wrap">
+        <div class="section-heading reveal">
+          <p class="section-index">06 / CONTINUOUS LEARNING</p>
+          <p class="kicker">LEARNING NEVER STOPS</p>
+          <h2>Certifications &amp;<br><em>learning.</em></h2>
+        </div>
+        <div class="cert-row reveal">
+          <a class="cert-tile" href="assets/Certification/design thinking.jpeg" target="_blank">
+            <span class="cert-provider">IBM</span>
+            <h3>Design Thinking</h3>
+            <p>APR 2024</p>
+          </a>
+          <a class="cert-tile" href="assets/Certification/GEN ai.jpeg" target="_blank">
+            <span class="cert-provider">IBM</span>
+            <h3>Introduction to Generative AI Studio</h3>
+            <p>FEB 2024</p>
+          </a>
+          <a class="cert-tile" href="assets/Certification/GEN ai.jpeg" target="_blank">
+            <span class="cert-provider">IBM</span>
+            <h3>DevOps Fundamentals</h3>
+            <p>2023</p>
+          </a>
+          <a class="cert-tile" href="assets/Certification/poowerBi.jpeg" target="_blank">
+            <span class="cert-provider accent2">POWER BI</span>
+            <h3>Power BI Certification</h3>
+            <p>Certificate</p>
+          </a>
+          <a class="cert-tile" href="assets/Certification/GEN ai.jpeg" target="_blank">
+            <span class="cert-provider accent2">GENERATIVE AI</span>
+            <h3>Generative AI Certification</h3>
+            <p>Certificate</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="section-wrap contact-inner reveal">
+        <p class="section-index">07 / CONTACT</p>
+        <p class="contact-overline">HAVE A PROJECT OR OPPORTUNITY?</p>
+        <h2>Let's make something<br><em>meaningful together.</em></h2>
+        <a class="contact-email" href="mailto:ajitht8754@gmail.com">ajitht8754@gmail.com <span>↗</span></a>
+        <div class="contact-links"><a href="https://www.linkedin.com/in/ajith-t-15855824b/" target="_blank"
+            rel="noopener">LinkedIn ↗</a><a href="https://github.com/Ajith8754" target="_blank" rel="noopener">GitHub
+            ↗</a><a href="https://wa.me/918754366470" target="_blank" rel="noopener">WhatsApp ↗</a><a
+            href="tel:+918754366470">+91 87543 66470</a></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Case Study Modal ───────────────────────────────────── -->
+  <div class="cs-overlay" id="csOverlay" role="dialog" aria-modal="true" aria-label="Case Study">
+    <div class="cs-modal">
+      <button class="cs-close" id="csClose" aria-label="Close">✕</button>
+      <div class="cs-body" id="csBody"></div>
+    </div>
+  </div>
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">A<span>.</span></span><span>AJITH
+        T</span></a><span>DESIGNED & BUILT BY AJITH T · © 2026</span><a href="#home">BACK TO TOP ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
